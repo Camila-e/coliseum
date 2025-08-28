@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion de combio de color</title>
+<style>
+    .texto-animado{
+        margin: 100px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+        font-size: 30px;
+        font-weight: bold;
+        color: aqua;
+        background-color: rgba(239, 205, 231, 0.918);
+        animation: rotateColor 5s linear infinite alternate;
+    }
+    
+@keyframes rotateColor{
+    0%{
+        transform: rotate(0deg);
+        color: aqua;
+    }
+    50%{
+        transform: rotate(180deg);
+        color: rgb(255, 0, 0);
+    }
+    100%{
+        transform: rotate(360deg);
+        color: aqua;
+    }
+}    
+</style>
+</head>
+<body>
+    
+<div class="texto-animado">
+    ¡Hi!
+</div>
+
+</body>
+</html>

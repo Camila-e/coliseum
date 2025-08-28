@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de flexbox</title>
+    <meta http-equiv="refresh" content="15" />
+    <style>
+        /*reseteon y base*/
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url(img/fondo.jpg) repeat;
+            line-height: 1.4;
+        }
+        /*contenido principal*/
+        .envoltorio {
+            display: flex;
+            padding: 32px;
+            justify-content: center;
+            
+
+        }.contenedor {
+            max-width: 900px;
+            flex-direction: column;        
+            align-items: center;/*centra los hijos horizontal*/
+            text-align: center;/*centra el texto*/
+            gap: 16px;/*espacio entre hijos*/
+    }
+
+    /*fila de tarjetas*/
+    .fila {
+        flex: 0 ;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+
+    }
+    .tarjeta {
+        flex: 1 1 260px; /*crece, encoge, tamaño base*/
+        border: 1px solid #ddd;
+        min-width: 240px;
+        max-width: 340px;
+        padding: 16px;
+        background: #fff;
+        border-radius: 12px;
+    }
+    .promocion {
+        outline: 2px dashed #333;/*destaca la promo*/  
+    }
+    </style>
+</head>
+<body>
+    <main class="envoltorio">
+        <section class="contenedor" aria-label="contenido principal">
+            <h2>Bienvenidos</h2>
+            <p>Este bloque siempre queda centrdo al cambiarel ancho de la ventana</p>
+
+            <section class="fila" aria-label="artículos destacados">
+                <article class="tarjeta">
+                    <h3>Artículo 1</h3>
+                <p>Texto breve del primer artículo.</p>
+            </article>
+                <article class="tarjeta">
+                    <h3>Artículo 2</h3>
+                <p>Texto breve del primer artículo.</p>
+            </article>
+                <aside class="tarjeta promocion">
+                    <h3>Promocion</h3>
+                <p>envio gratis a partir de </p>
+            </article>
+        </aside>
+        </section>
+    </main>
+</body>
+</html>
+
+

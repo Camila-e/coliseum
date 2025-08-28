@@ -1,0 +1,10 @@
+        .logotipo {
+            width: 100px;
+            height: 100px;
+            background-image: url('img/bola-mundial.png');
+            background-size: cover;
+            transition: transform 0.2s ease;
+        }
+        .logotipo:hover {
+            transform: rotate(180deg);
+        }

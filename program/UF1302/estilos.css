@@ -1,0 +1,20 @@
+body{
+   background-color: blueviolet;
+}
+
+section{
+
+    width: 80%;
+    height: 600px;
+    border: 3px solid black;
+}
+
+div{
+width: 300px;
+height: 150px;
+background-color: blue;
+color: azure;
+border: 1px dashed red;
+display: inline-block
+
+}
