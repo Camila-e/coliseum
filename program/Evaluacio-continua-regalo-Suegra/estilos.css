@@ -1,8 +1,11 @@
+
+
 /* Fuente Lobster */
 @font-face {
     font-family: 'MiFuente';
     src: url('fonts/Lobster.ttf') format('truetype');
 }
+
 
 /* Reset */
 * {
@@ -10,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* Fondo general */
 body {
@@ -19,6 +23,7 @@ body {
     color: #333;
 }
 
+
 /* Encabezado superior */
 .top-bar {
     display: flex;
@@ -27,41 +32,25 @@ body {
     background: url(img/gris_granulado.jpg) repeat;
     padding: 10px 20px;
     height: 100px;
+    position: relative;
 }
+
 
 /* Logo verde + título */
 .logo-title {
     display: flex;
     align-items: center;
     gap: 100px;
+
+
 }
+
 
 .top-bar h1 {
     font-size: 1.8rem;
     color: white;
 }
 
-/* Nombre alineado a la derecha */
-.author {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    text-align: right;
-}
-/* Textos de bienvenida */
-.textos {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.textos h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.textos p {
-    font-size: 1.2rem;
-}
 
 /* Contenedor para títulos destacados */
 .titulo-container {
@@ -72,11 +61,13 @@ body {
     margin-top: 20px;
 }
 
+
 /* Cajas de título con sombra y animación */
 @keyframes aparecerEscalar {
   0% { opacity: 0; transform: scale(0.8); }
   100% { opacity: 1; transform: scale(1); }
 }
+
 
 .titulo-caja {
     display: inline-block;
@@ -93,9 +84,10 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Caja “Tu nombre” centrada */
+
+/* Caja “Tu nombre” */
 .caja-tu-nombre {
-    position: absolute;
+    position:initial;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -109,12 +101,27 @@ body {
     align-items: flex-start;
 }
 
-/* Caja “Regalos tu hogar” izquierda */
+
+/* Imagen del logo */
+.logo {
+    bottom: 10px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    position: static;
+    animation: Logo 8s ease-in-out 2s 2;
+    transform-origin: center;
+    border: 5px solid black;
+    border-radius: 60%;
+    margin-left: 0;  
+}
+/* Caja “Regalos tu hogar” */
 .caja-regalos-hogar {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+    text-align: center;
+    position: absolute; /* Coloca la caja de manera absoluta */
+    top: 50%; /* Ubica la caja en el medio vertical del .top-bar */
+    left: 50%; /* Ubica la caja en el medio horizontal del .top-bar */
+    transform: translate(-50%, -50%); /* Ajuste para centrar completamente */
     background: black;
     color: white;
     font-size: 1rem;
@@ -123,18 +130,6 @@ body {
     border: 2px solid gray;
     font-weight: bold;
 }
-
-/* Imagen verde del logo con borde y animación */
-.logo {
-    height: 150px;
-    width: 150px;
-    margin-bottom: 10px;
-    animation: Logo 8s ease-in-out 2s 2;
-    transform-origin: center;
-    border: 5px solid black;  /* borde negro */
-    border-radius: 60%;        /* borde redondo completo */
-}
-
 /* Animación: derecha → inicio → izquierda → inicio */
 @keyframes Logo {
     0% { transform: rotate(0deg); }
@@ -144,29 +139,17 @@ body {
     70% { transform: rotate(0deg); }     /* vuelve inicio */
     100% { transform: rotate(0deg); }    /* pausa final */
 }
-/* Textos de bienvenida */
-.textos {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.textos h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.textos p {
-    font-size: 1.2rem;
-}
 
 /* Galería de regalos */
 .galeria {
   display: flex;
   justify-content: center;
-  gap: 80px;  /* separación entre regalos */
+  gap: 90px;  
   padding: 20px;
   flex-wrap: wrap;
 }
+
 
 .caja-regalo {
   background: white;
@@ -179,11 +162,13 @@ body {
   transition: box-shadow 0.3s;
 }
 
+
 .caja-regalo img {
   width: 100%;
   height: auto;
   display: block;
 }
+
 
 .caja-regalo p {
   background: black;
@@ -193,12 +178,14 @@ body {
   margin: 0;
 }
 
-/* Hover de la caja de regalo: vaivén de rotación 0°→25°→0° */
+
+/* Hover de la caja de regalo: rotación 0°→25°→0° */
 .caja-regalo:hover {
   animation: vaiven 1s ease-in-out;
   animation-fill-mode: forwards;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
+
 
 /* Keyframes para vaivén suave de rotación */
 @keyframes vaiven {
@@ -209,6 +196,7 @@ body {
     100% { transform: rotate(0deg) scale(1.05); }
 }
 
+
 /* Imagen larga de flores */
 .flores {
   display: flex;
@@ -217,23 +205,24 @@ body {
   position: relative;
 }
 
+
 .flores img {
   max-width: 100%;
   height: auto;
-  border-radius: 0;
+  border-radius: 10;
   box-shadow: 0 6px 15px rgba(0,0,0,0.5);
   display: block;
 }
 
+
 .flores p {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 2px;
+  left: 77.2%;
+  transform: translateX(-50% -50%);
   background: rgba(0,0,0,0.6);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px 20px;
-  border-radius: 6px;
   margin: 0;
 }

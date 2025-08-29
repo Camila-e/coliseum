@@ -1,0 +1,83 @@
+/* estilos generales (movil) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+}
+nav ol {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+article {
+    background-color: #c20e0e;
+    padding: 15px;
+    border-radius: 5px;
+}   
+footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #4CAF50;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+/* estilos generales (tablet pantallas medianas) */
+@media (min-width: 600px) {
+    nav ol {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*menu en horizontal */
+        justify-content: center;
+    }
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+/* articulos en varias columnas */
+    }
+    article {
+        flex: 1 1 calc(50% - 20px);
+/* articulos en fila*/
+    }
+}
+/* estilos generales (escritorio pantallas grandes) */
+@media (min-width: 900px) {
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    section{
+        gap: 20px;
+    }
+    article {
+        flex: 1 1 calc(33% - 20px);
+        /* articulos en fila */
+    }
+
+}
