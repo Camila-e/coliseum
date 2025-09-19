@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanStep - Zapatillas Urbanas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>UrbanStep</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Modelos</a></li>
+        <li><a href="#">Guía de Tallas</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="contenedor">
+    <!-- Sección de Texto -->
+    <section class="texto">
+      <h2>UrbanStep: Muévete a tu ritmo</h2>
+      <p class="eslogan">Ligereza, agarre y estilo para la ciudad.</p>
+      
+      <!-- Imágenes de Modelos -->
+      <div class="imagenes-modelos">
+        <img src="img/aerolite.jpg" alt="Zapatillas AeroLite" class="modelo-imagen">
+        <img src="img/cityflex.jpg" alt="Zapatillas CityFlex" class="modelo-imagen">
+        <img src="img/trailbeat.jpg" alt="Zapatillas TrailBeat" class="modelo-imagen">
+      </div>
+      
+      <p>En UrbanStep diseñamos zapatillas pensadas para el día a día: ligeras, transpirables y con una suela que responde a cada paso. Porque tu ritmo es único y tus zapatillas deberían acompañarte, no frenarte.</p>
+      <p>Elige entre nuestros modelos más vendidos —AeroLite, CityFlex y TrailBeat— y encuentra el equilibrio perfecto entre comodidad y diseño. Además, contamos con tallas de la 36 a la 46 para que llegues siempre a tu ajuste ideal.</p>
+      <p class="cta">Rellena el formulario y te enviaremos una guía de tallas y una oferta exclusiva de lanzamiento. Da el primer paso con UrbanStep.</p>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="formulario">
+      <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="modelo">Modelo</label>
+        <select id="modelo" name="modelo">
+          <option value="AeroLite">AeroLite</option>
+          <option value="CityFlex">CityFlex</option>
+          <option value="TrailBeat">TrailBeat</option>
+        </select>
+
+        <label for="talla">Talla (EU)</label>
+        <select id="talla" name="talla" required>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+        <label for="aceptar">
+          <input type="checkbox" id="aceptar" name="aceptar" required> Acepto la política de privacidad
+        </label>
+
+        <button type="submit">Quiero mis UrbanStep</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 UrbanStep · <a href="#">Instagram</a> · <a href="#">TikTok</a> · <a href="#">Soporte</a></p>
+  </footer>
+</body>
+</html>
