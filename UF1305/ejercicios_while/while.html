@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // se inicia en 0
+        var i = 0;
+        //bucle que se repite mientras sea menor que 30
+        while(i<30) {
+            // En cada vuelta del bucle aumenta 1
+            i++;
+            
+            if (i==20){
+                continue;
+            // Continue significa que cuando i sea exactamente 20, se ejecute el continue
+            }
+            alert (i * 2);
+            // En cada interacion (excepto cuando i=20, se muestra cada ventana emergente con el valor de i * 2)
+            
+        }
+        // El resultado será 29 ventanas de alerta porque i=1 hasta uqe i=30. se ejecute siempre excepto en i=20
+    </script>
+</body>
+</html>

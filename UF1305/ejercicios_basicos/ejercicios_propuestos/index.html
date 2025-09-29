@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios basicos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+    }
+
+  </style>
+</head>
+<body>
+   <!-- Enlace al archivo JavaScript -->
+   <!--  <script src="script.js"></script>-->
+  <h1>Ejercicios</h1>
+
+   <!-- Ejercicio 1: Saludo personalizado -->
+    <script>
+    // Función que pide el nombre del usuario y muestra un saludo personalizado.
+    function saludoPersonalizado() {
+      let nombre = prompt("¿Cómo te llamas?");
+      alert("Hola, " + nombre + ". ¡Bienvenida!");
+    }
+
+    // Función que calcula la edad del usuario en el futuro (5 años después).
+    function edadFutura() {
+      let edad = parseInt(prompt("¿Cuántos años tienes?"));
+      let futura = edad + 5;
+      document.write("Dentro de 5 años tendrás " + futura + " años.");
+    }
+
+    // Función que verifica si un número es par o impar.
+    function numeroParOImpar() {
+      let numero = parseInt(prompt("Introduce un número:"));
+      if (numero % 2 === 0) {
+        alert("Es un número par.");
+      } else {
+        alert("Es un número impar.");
+      }
+    }
+
+    // Función que determina si el usuario es mayor de edad.
+    function mayorDeEdad() {
+      let edad = parseInt(prompt("¿Qué edad tienes?"));
+      if (edad >= 18) {
+        alert("Bienvenido");
+      } else {
+        alert("No puedes entrar");
+      }
+    }
+
+    // Función que convierte un número del 1 al 7 en el nombre de un día de la semana.
+    function diaDeLaSemana() {
+      let dia = parseInt(prompt("Escribe un número del 1 al 7:"));
+      let nombreDia;
+      switch (dia) {
+        case 1: nombreDia = "Lunes"; break;
+        case 2: nombreDia = "Martes"; break;
+        case 3: nombreDia = "Miércoles"; break;
+        case 4: nombreDia = "Jueves"; break;
+        case 5: nombreDia = "Viernes"; break;
+        case 6: nombreDia = "Sábado"; break;
+        case 7: nombreDia = "Domingo"; break;
+        default: nombreDia = "Número inválido";
+      }
+      alert("Día: " + nombreDia);
+    }
+
+    // Función que muestra el resultado de la calificación escolar según la nota ingresada.
+    function calificacionEscolar() {
+      let nota = parseFloat(prompt("Introduce tu nota:"));
+      if (nota < 5) {
+        alert("Suspenso");
+      } else if (nota < 7) {
+        alert("Aprobado");
+      } else if (nota < 9) {
+        alert("Notable");
+      } else if (nota <= 10) {
+        alert("Sobresaliente");
+      } else {
+        alert("Nota inválida");
+      }
+    }
+
+    // Función que realiza una operación simple entre dos números: suma o resta.
+    function calculadoraSimple() {
+      let num1 = parseFloat(prompt("Primer número:"));
+      let num2 = parseFloat(prompt("Segundo número:"));
+      let operacion = prompt("¿Sumar o restar?");
+      if (operacion === "sumar") {
+        alert("Resultado: " + (num1 + num2));
+      } else if (operacion === "restar") {
+        alert("Resultado: " + (num1 - num2));
+      } else {
+        alert("Operación no válida");
+      }
+    }
+
+    // Función que compara dos números y muestra cuál es mayor o si son iguales.
+    function compararNumeros() {
+      let a = parseFloat(prompt("Primer número:"));
+      let b = parseFloat(prompt("Segundo número:"));
+      if (a > b) {
+        alert(a + " es mayor que " + b);
+      } else if (b > a) {
+        alert(b + " es mayor que " + a);
+      } else {
+        alert("Ambos números son iguales");
+      }
+    }
+
+    // Función que permite adivinar un número secreto (en este caso, el número 7).
+    function adivinarNumero() {
+      const secreto = 7;
+      let intento = parseInt(prompt("Adivina el número del 1 al 10:"));
+      if (intento === secreto) {
+        alert("¡Correcto! Adivinaste.");
+      } else {
+        alert("Incorrecto. El número era " + secreto);
+      }
+    }
+
+    // Función que convierte grados Celsius a Fahrenheit.
+    function convertirGrados() {
+      let celsius = parseFloat(prompt("Introduce grados Celsius:"));
+      let fahrenheit = celsius * 9/5 + 32;
+      alert(celsius + "°C son " + fahrenheit.toFixed(2) + "°F");
+    }
+
+    // Se ejecutan todas las funciones al cargar la página
+    window.addEventListener('load', function() {
+      saludoPersonalizado();
+      edadFutura();
+      numeroParOImpar();
+      mayorDeEdad();
+      diaDeLaSemana();
+      calificacionEscolar();
+      calculadoraSimple();
+      compararNumeros();
+      adivinarNumero();
+      convertirGrados();
+    });
+  </script>
+</body>
+</html>

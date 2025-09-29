@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-opcional-4</title>
+</head>
+
+<body>
+    <script>
+        /*Introducir un precio a pagar y el dinero disponible y mostrar si le falta dinero, indicarle
+        cuanto, si le sobra indicarle cuanto y si esta justo mostrar gracis por la compra*/
+
+        /*El parseFloat lo que escribe el usuario lo convierte a número con decimales*/
+        var precio = parseFloat(prompt ("Introduce el precio."));
+        var efectivo = parseFloat(prompt("Introduce el dinero del que dispones."));
+        var resultado = 0;
+
+        if(precio>efectivo)
+    {
+        resultado = precio - efectivo;
+        alert("Le falta por pagar: "+resultado);
+    }
+
+    else if(efectivo>precio)
+    {
+        resultado = efectivo - precio;
+        alert("Le sobra: "+resultado);
+    }
+
+    else
+    {
+        alert("Gracias por la compra");
+    }
+
+    </script>
+
+</body>
+
+</html>

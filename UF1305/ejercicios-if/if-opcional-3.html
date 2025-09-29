@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-opcional-3</title>
+</head>
+
+<body>
+    <script>
+
+    /*Introducir un año y mostrar su es bisiesto
+    1- Si el año es divisible por 400 es bisiesto.
+    2- Si NO se cumple lo anterior, pero es divisible por 100 es bisiesto
+    3- En cuallquier otro caso no es bisiesto.
+    4- El operador % es módul: devuelve el resto de la división
+    Year significa que es múltiplo de 4*/
+
+    var year = 1600; /*guarda el año a comprobar*/
+
+    if (year%    400==0)/*es múltiplo de 400?*/
+    {
+        alert("Es bisisesto"); /*si fin (No miras más)*/
+    }
+
+    else if(year % 4== 0 && year %100 !=0)  /*Si bisiesto*/
+    {
+        alert("Es bisisesto");
+    }
+
+    else /*En cualquier otro caso no es bisiesto*/
+    {
+        alert("No es bisisesto");
+    }
+
+    </script>
+
+</body>
+
+</html>

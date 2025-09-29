@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Java Script</title>
+</head>
+
+<body>
+
+        <h3>1. Saludo con alert</h3>
+<p> Pide al usuario su nombre con prompt() y muestra un saludo con alert().</p>
+
+<script>
+
+    var nombre = prompt("Introduce tu nombre");
+
+    alert("Bienvenido/a a mi página, " + nombre);
+
+</script>
+
+        <h3>2. Edad mínima</h3>
+<p>Pregunta la edad y muestra un mensaje dependiendo del valor.</p>
+
+    <script>
+
+        var edad = prompt("Introduce tu edad");
+
+        if(edad >= 18)
+        {
+            alert("Eres mayor de edad");
+        }
+
+        else
+        {
+            alert("Eres menor de edad");
+        }
+    </script>
+    
+    <h3>3. Comparar dos números</h3>
+<p>Pide dos números y muestra cuál es mayor.</p>
+
+    <script>
+
+        var numero1 = prompt("Introduce el primer número");
+        var numero2 = prompt("Introduce el segundo número");
+
+        if(numero1 > numero2)
+        {
+            alert("El primer número es mayor");
+        }
+
+        else if(numero1 < numero2)
+        {
+            alert("El segundo número es mayor");
+        }
+
+    </script>
+
+    <h3>4. Adivinar un número</h3>
+<p>l ordenador tiene un número secreto y el usuario debe adivinarlo.</p>
+
+    <script>
+        var numeroSecreto = 7;
+        var numeroUsuario = prompt("Adivina el número secreto (entre 1 y 10)");
+
+        if(numeroUsuario == numeroSecreto)
+        {
+            alert("¡Felicidades! Has adivinado el número secreto.");
+        }
+
+        else
+        {
+            alert("Lo siento, el número secreto era " + numeroSecreto);
+        }
+    </script>
+
+    <h3>Clasificación de notas</h3>
+<p>El usuario introduce su nota (0 - 10) y recibe un mensaje.</p>
+
+    <script>
+        var nota = prompt("Introduce tu nota (0-10)");
+
+        if(nota >= 9 && nota <= 10)
+        {
+            alert("Sobresaliente");
+        }
+
+        else if(nota >= 7 && nota < 9)
+        {
+            alert("Notable");
+        }
+
+        else if(nota >= 5 && nota < 7)
+        {
+            alert("Aprobado");
+        }
+
+        else if(nota >= 0 && nota < 5)
+        {
+            alert("Suspenso");
+        }
+
+        else
+        {
+            alert("Nota no válida");
+        }
+    </script>
+
+    <h3>6. Menú de opciones</h3>
+<p>Crea un pequeño menú con prompt() y usa if, else if y else.</p>
+    
+    <script>
+        var opcion = prompt("Elige una opción:\n1. Saludar\n2. Despedirse\n3. Preguntar por el clima");
+
+        if(opcion == "1")
+        {
+            alert("¡Hola! ¿Cómo estás?");
+        }
+
+        else if(opcion == "2")
+        {
+            alert("¡Adiós! Que tengas un buen día.");
+        }
+
+        else if(opcion == "3")
+        {
+            alert("¿Cómo está el clima hoy?");
+        }
+
+        else
+        {
+            alert("Opción no válida");
+        }
+    </script>
+
+</body>
+
+</html>

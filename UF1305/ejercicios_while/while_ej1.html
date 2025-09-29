@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declarar una variable numerica.  
+        // mostrar todos los numeros pares en el formato decreciente hasta llegar a 0. 
+        // comprobar si el numero introducido es par.
+
+        var number = 499;// numero inicial
+        // si el numero es impar, le restamos 1 para  que sea par
+        if (number%2!=0) {
+            number-=1;
+        }
+        // mientras el numero sea mayor o igual que 0
+        while (number>=0) {
+            document.write("<br>" +number);
+            //mosrear el numero en la pagina
+            number -=2;
+            // resta 2 en cada vuelta (solo los pares)
+        }
+    </script>
+</body>
+</html>

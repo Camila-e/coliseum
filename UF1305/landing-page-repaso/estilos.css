@@ -1,0 +1,107 @@
+header {
+    background-image: url(img/fondo-header.jpg);
+    color: rgb(56, 56, 135);
+    height: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.nombre-tienda{
+    text-align: center;
+}
+
+.subtitulo{
+    text-align: center; 
+    font-size: 15px;
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+#logo-tienda {
+    border: solid rgb(29, 33, 36) 3px;
+    border-radius: 50%;
+    animation: logogiro;
+    animation-duration: 6s;
+    transform: rotate(20deg);
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    
+}
+
+@keyframes logogiro {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(360deg);}
+    50% {transform: rotate(-360deg)}
+    100% {transform:rotate(0deg)}
+}
+
+ /*Estilo barra de menú con 3 enlaces ficticios*/
+nav {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5wm;
+    color: blue
+}
+a:hover{
+
+    color: yellowgreen
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+
+.columna-izquierda{
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+    }
+
+.columna-derecha{
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height:20px;
+    background-color: grey;
+    bottom: 0px;
+    position: fixed;
+}

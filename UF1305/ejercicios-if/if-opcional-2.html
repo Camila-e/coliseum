@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-opcional-2</title>
+</head>
+
+<body>
+<script>
+    /*Introducir el numero de mes y año. Mostrar el mes siguiente*/
+
+    var mes = parseInt(prompt("Introduzca el mes:"));
+    var year = parseInt(prompt("Introduzca el año:"));
+
+    if(mes == 12)
+{
+    mes=1;
+    alert("1 del "+(year+1));
+}
+
+else
+{
+mes = mes+1;
+alert(mes+" del "+year);
+}
+
+</script>    
+
+
+</body>
+
+</html>

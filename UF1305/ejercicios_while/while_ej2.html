@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Algoritmo que va leyendo números enteros desde el teclado hasta que se introduzca un número múltiplo de 7.
+        // La salida por pantalla serán los números que has utilizado de todos los numero impares y positivos. leídos sin contar el ultimo
+        var num;
+        var res = 0;
+        num = prompt("Introduzca un número.")
+        while (num%7>0) {
+            if (num%2>0&& num>0){
+            res=res+num;
+            }
+        num = prompt("Introduzca un número.")
+    }
+        alert("La suma de todos los números ha sido: " +res);
+    </script>
+</body>
+</html>
