@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cambiar boton de color</title>
+</head>
+<body>
+    <p id="texto">Haz click en el boton para cambiar mi color.</p>
+    <button onclick="cambiarColor()">Cambiar color</button>
+    <script>
+        //como se modifican propiedades css desde javascript usando .style.
+        function cambiarColor() {
+            const texto = document.getElementById("texto");
+            texto.style.color = "blue";
+            texto.style.fontWeight = "22px";
+        }
+    </script>
+</body>
+</html>

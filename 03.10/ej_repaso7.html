@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basico</title>
+</head>
+<body>
+    <h2 id="mensaje">Texto original</h2>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+    <script>
+        //que es el DOM y como acceder a elementos por su ID.
+        function cambiarTexto() {
+            document.getElementById("mensaje").textContent = "Texto cambiado con JavaScript";
+        }
+    </script>
+
+</body>
+</html>

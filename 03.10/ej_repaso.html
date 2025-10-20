@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables básicas</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Ejemplo con VAR, LET, CONST
+        var saludo = "Hola con VAR";
+        let nombre = "Camila";
+        const PI = 3.1416;
+
+        alert(saludo);
+        document.write("Tu nombre es: " + nombre + "<br>");
+        document.write("El valor de PI es: " + PI + "<br>");
+    </script>
+
+    <script>
+
+        // Pedir datos a un usuario
+        let usuario = prompt("¿Cómo te llamas?");
+        let ciudad = prompt("¿En qué ciudad vives?");
+
+        // Mostrar los datos
+        alert("Encantado de conocerte, " + usuario + " de " + ciudad);
+        document.write("<h2>Bienvenid@ " + usuario + " desde " + ciudad + "</h2>");
+    </script>
+    <script>
+
+        //ejemplo funcion para sumar numeros, recibe dos numeros y devuelve la suma
+        function sumar(a, b) {
+            return a + b;
+        }
+        let num1 = Number(prompt("Introduce el primer número:"));
+        let num2 = Number(prompt("Introduce el segundo número:"));
+        let resultado = sumar(num1, num2);
+        alert("La suma es: " + resultado);
+        document.write("Resultado de la suma: " + resultado + "</br>");
+    </script>
+    <script>
+       
+//funcion con condicion edad
+        function ComprobarEdad(edad) {
+            if (edad >= 18) {
+                return "Eres mayor de edad";
+            } 
+            else {
+                return "Eres menor de edad";
+            }
+        }
+        let edadUsuario = Number(prompt("¿Cuántos años tienes?"));
+        let mensajeEdad = ComprobarEdad(edadUsuario);
+        alert(mensajeEdad);
+        document.write("<p>" + mensajeEdad + "</p>");
+       
+    </script>
+
+    <script>
+    
+//ejemplo while contar del 1 al 5
+        let contador = 1;
+        while (contador <= 10) {
+            document.write("Número: " + contador + "<br>");
+            contador++;// aumenta el valor en 1 cada vuelta
+        }
+
+    </script>
+    <script>
+//ejemplo array con los meses del año
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+         "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+         alert("el primer mes es: " + meses[0]);
+         alert("el último mes es: " + meses[11]);
+
+
+        document.write("<h3>Meses del año:</h3>");
+        for (let i = 0; i < meses.length; i++) {
+            document.write(meses[i] + "<br>");
+        }
+    </script>
+    <script>
+    //recorrer un array con un bucle for, recorreemos el array e imprimimos todos los meses
+        let mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+         "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+         for (let i = 0; i < mes.length; i++) {
+            document.write(mes[i] + "<br>");
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

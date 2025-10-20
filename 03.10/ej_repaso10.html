@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion simple</title>
+</head>
+<body>
+    <h3>Formulario de contacto</h3>
+    <input type="text" id="nombre" placeholder="Tu Nombre">
+    <button onclick="validar()">Enviar</button>
+    <script>
+        //como comprobar si un campo de texto esta vacio y como usar trim().
+        function validar() {
+            const nombre = document.getElementById("nombre").value.trim();
+            if (nombre === "") {
+                alert(" Por favor, ingresa tu nombre antes de continuar.");
+            } else {
+                alert("Gracias, " + nombre + "!");
+            }
+        }
+    </script>
+    
+</body>
+</html>
